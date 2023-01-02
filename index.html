@@ -12,6 +12,8 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="index.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
@@ -30,175 +32,31 @@
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        min-height: 100vh;
-        background: url("images/bg-desktop.svg") fixed no-repeat center/cover
-          hsl(257, 40%, 49%);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-      }
-
-      .logo {
-        width: 200px;
-        display: block;
-        margin: 0 0 3rem 0;
-      }
-
-      .illustration {
-        width: 600px;
-      }
-
-      h1 {
-        width: 360px;
-        color: hsl(0, 0%, 100%);
-        margin: 9rem 0 2rem 0;
-        font-family: Poppins;
-        font-weight: 600;
-      }
-
-      .paragraph {
-        width: 460px;
-        color: hsl(0, 0%, 100%);
-        font-family: "Open Sans";
-      }
-
-      button {
-        width: 145px;
-        height: 45px;
-        border-radius: 50px;
-        border-style: none;
-        background: hsl(0, 0%, 100%);
-        color: hsl(257, 40%, 49%);
-        margin: 1rem 0 10rem 0;
-      }
-
-      button:hover {
-        background: hsl(300, 69%, 71%);
-        color: hsl(0, 0%, 100%);
-        cursor: pointer;
-      }
-
-      .social {
-        display: flex;
-        justify-content: flex-end;
-        gap: 10px;
-      }
-
-      .fa-brands {
-        border: 1px solid hsl(0, 0%, 100%);
-        border-radius: 50%;
-        color: hsl(0, 0%, 100%);
-      }
-
-      .fa-facebook-f {
-        padding: 6px 8px;
-      }
-
-      .fa-twitter {
-        padding: 6px;
-        margin: 0 6px 0;
-      }
-
-      .fa-instagram {
-        padding: 6px;
-      }
-
-      .fa-brands:hover {
-        color: hsl(300, 69%, 71%);
-        border-color: hsl(300, 69%, 71%);
-      }
-
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-        font-family: Poppins;
-      }
-      .attribution a {
-        color: hsl(181, 45%, 44%);
-      }
-
-      @media (max-width: 376px) {
-        body {
-          background: url("images/bg-mobile.svg") scroll no-repeat
-            hsl(257, 40%, 49%);
-          background-size: contain;
-        }
-
-        main {
-          flex-direction: column;
-          gap: 0px;
-        }
-
-        .logo {
-          margin: 2rem 0 3rem 0;
-        }
-
-        .illustration {
-          width: 350px;
-        }
-
-        h1 {
-          text-align: center;
-        }
-
-        .paragraph {
-          text-align: center;
-          margin: auto;
-          width: 300px;
-        }
-
-        button {
-          display: block;
-          margin: 3rem auto 5rem;
-          width: 160px;
-        }
-
-        .social {
-          justify-content: center;
-        }
-      }
-    </style>
   </head>
+
   <body>
     <main>
-      <div>
-        <img class="logo" src="images/logo.svg" alt="site logo" />
+      <img class="logo" src="images/logo.svg" alt="site logo" />
+      <div class="main-content">
         <img
           src="images/illustration-mockups.svg"
           alt="desktop and mobile image"
           class="illustration"
         />
-      </div>
-      <div>
-        <h1>Build The Community Your Fans Will Love</h1>
-        <p class="paragraph">
-          Huddle re-imagines the way we build communities. You have a voice, but
-          so does your audience. Create connections with your users as you
-          engage in genuine discussion.
-        </p>
-        <button>Register</button>
-        <div class="social">
-          <a href="#"><i class="fa-brands fa-facebook-f"></i></a
-          ><a href="#"><i class="fa-brands fa-twitter"></i></a
-          ><a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <div class="text">
+          <h1>Build The Community Your Fans Will Love</h1>
+          <p>
+            Huddle re-imagines the way we build communities. You have a voice,
+            but so does your audience. Create connections with your users as you
+            engage in genuine discussion.
+          </p>
+          <button>Register</button>
         </div>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a
+        ><a href="#"><i class="fa-brands fa-twitter"></i></a
+        ><a href="#"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </main>
 
